@@ -1,4 +1,4 @@
-type NewPromotionType = {
+export type NewPromotionType = {
   promotion_image: string;
   city: string;
   establishment: string;
