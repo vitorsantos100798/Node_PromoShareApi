@@ -1,7 +1,7 @@
 export type NewPromotionType = {
-  promotion_image: string;
-  city: string;
-  establishment: string;
-  product: string;
+  imagePromotion: string;
+  nameProduct: string;
   price: string;
+  nameSupermarketing: string;
+  city: string;
 };
