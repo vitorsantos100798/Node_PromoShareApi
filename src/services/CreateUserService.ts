@@ -6,7 +6,7 @@ export class CreateUserService {
     const user = await UserRepositories.findOneBy({ email });
 
     if (user) {
-      return new Error("User Already Exists");
+      return new Error("Usuário já Cadastrado");
     }
 
     const hash = await bcrypt.hash(password, 8);
