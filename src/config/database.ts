@@ -1,5 +1,5 @@
 export default {
-  username: "promoday",
-  password: "promoday",
-  database: "PromoShareApi",
+  username: "postgres",
+  password: "postgres",
+  database: "project",
 };

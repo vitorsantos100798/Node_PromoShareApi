@@ -13,6 +13,6 @@ router.post("/createuser", new CreateUserController().create);
 router.post("/login", new LoginController().handler);
 router.post("/refleshtoken", new RefleshTokenController().refleshToken);
 router.post("/newpromotion", new NewPromotionController().handler);
-router.get("/getpromotion/:city", new GetPromotionController().execute);
+router.get("/getpromotion", new GetPromotionController().execute);
 router.get("/getcities", new GetCitiesController().execute);
 router.get("/getcupons", new GetCuponsController().execute);
