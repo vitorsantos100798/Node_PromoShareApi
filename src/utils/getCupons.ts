@@ -41,16 +41,7 @@ export const GetCupons = [
     validade: new Date("2023-04-30"),
     desconto: 20,
   },
-  {
-    nome: "Frete Grátis em compras acima de R$150",
-    descricao: "Ganhe frete grátis em compras acima de R$150 no Sam's Club",
-    codigo: "SAMSFREE150",
-    image:
-      "https://scontent-gru2-2.xx.fbcdn.net/v/t39.30808-6/350672443_6527093354020390_6272521105324284870_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=a2f6c7&_nc_eui2=AeEgd6UHwCBXfwFmBk8fEpHIHkL9O5o3yXYeQv07mjfJdi-ScohRhXGa8SlSM0UKtDi65asHyijUagP2smU9xfZT&_nc_ohc=X1V1CQQ6X1AAX9BeyWV&_nc_ht=scontent-gru2-2.xx&oh=00_AfASg1Ecqzu2z8s5MXlf0K8NLwhHBLPm9OHlXMgTqAOkiA&oe=64F673EC",
-    loja: "Sam's Club",
-    validade: new Date("2023-05-05"),
-    desconto: 0,
-  },
+
   {
     nome: "R$10 OFF em compras acima de R$150",
     descricao: "Economize R$10 em compras acima de R$150 no Max Atacadista",
@@ -214,5 +205,15 @@ export const GetCupons = [
     loja: "Carrefour",
     validade: new Date("2023-07-01"),
     desconto: 20,
+  },
+  {
+    nome: "Frete Grátis em compras acima de R$150",
+    descricao: "Ganhe frete grátis em compras acima de R$150 no Sam's Club",
+    codigo: "SAMSFREE150",
+    image:
+      "https://scontent-gru2-2.xx.fbcdn.net/v/t39.30808-6/350672443_6527093354020390_6272521105324284870_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=a2f6c7&_nc_eui2=AeEgd6UHwCBXfwFmBk8fEpHIHkL9O5o3yXYeQv07mjfJdi-ScohRhXGa8SlSM0UKtDi65asHyijUagP2smU9xfZT&_nc_ohc=X1V1CQQ6X1AAX9BeyWV&_nc_ht=scontent-gru2-2.xx&oh=00_AfASg1Ecqzu2z8s5MXlf0K8NLwhHBLPm9OHlXMgTqAOkiA&oe=64F673EC",
+    loja: "Sam's Club",
+    validade: new Date("2023-05-05"),
+    desconto: 0,
   },
 ];
