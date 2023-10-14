@@ -1,4 +1,5 @@
 import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
+import dayjs from "dayjs";
 
 @Entity()
 export class NewPromotion {
@@ -19,4 +20,11 @@ export class NewPromotion {
 
   @Column()
   price: string;
+
+  @Column({ nullable: true })
+  createdAt: string;
+
+  constructor() {
+    this.createdAt = dayjs().format("DD/MM/YYYY");
+  }
 }

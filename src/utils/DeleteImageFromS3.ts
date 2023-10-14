@@ -16,10 +16,8 @@ export class DeleteImageFromS3 {
 
     try {
       await s3.deleteObject(params).promise();
-      // Se a exclusão for bem-sucedida, você pode retornar true ou outra indicação de sucesso.
       return true;
     } catch (error) {
-      // Se ocorrer um erro, você pode tratá-lo e retornar false ou lançar uma exceção, conforme necessário.
       console.error("Erro ao excluir imagem do S3:", error);
       return false;
     }

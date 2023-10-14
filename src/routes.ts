@@ -7,6 +7,7 @@ import { GetPromotionController } from "./controller/GetPromotionController";
 import { GetCitiesController } from "./controller/GetCities";
 import { GetCuponsController } from "./controller/GetCupons";
 import { ProfileImageController } from "./controller/ProfileImageController";
+import { GetInfoUserController } from "./controller/getInfoUserController";
 
 export const router = Router();
 
@@ -19,3 +20,4 @@ router.post("/profileImage", new ProfileImageController().handler);
 
 router.get("/getcities", new GetCitiesController().execute);
 router.get("/getcupons", new GetCuponsController().execute);
+router.get("/getinfouser", new GetInfoUserController().execute);

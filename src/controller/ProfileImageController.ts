@@ -8,7 +8,9 @@ export class ProfileImageController {
 
     const user = await serviceImageProfile.execute(data);
 
-    // console.log("LOG NO CONTROLLER", auth);
+    if (user instanceof Error) {
+      return response.status(400).json(user.message);
+    }
 
     return response.json(user);
   }
