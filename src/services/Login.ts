@@ -53,6 +53,7 @@ export class LoginService {
     await RefleshTokenRepositories.save(create);
     return {
       user: user.id,
+      city: user.city,
       token,
       refleshToken,
     };
