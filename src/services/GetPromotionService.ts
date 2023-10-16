@@ -10,6 +10,7 @@ export class GetPromotionService {
     if (!find || find.length == 0) {
       return new Error("Sua Cidade não Possui Promoções Ativas.");
     }
-    return find;
+    const reverseDataFetchArray = find.reverse();
+    return reverseDataFetchArray;
   }
 }
