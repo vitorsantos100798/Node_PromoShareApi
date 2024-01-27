@@ -1,5 +1,5 @@
 export default {
-  username: "postgres",
-  password: "postgres",
-  database: "project",
+  database: "promoday",
+  username: "vitorinacio1007",
+  password: "vitorinacio1007",
 };
