@@ -1,5 +1,5 @@
 export default {
-  username: "promoday",
-  password: "promoday",
-  database: "PromoShareApi",
+  database: "promoday",
+  username: "vitorinacio1007",
+  password: "vitorinacio1007",
 };

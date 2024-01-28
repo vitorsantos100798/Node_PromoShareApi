@@ -1,6 +1,5 @@
 import { Request, Response } from "express";
 import { LoginService } from "../services/Login";
-
 export class LoginController {
   async handler(request: Request, response: Response) {
     const data = request.body;

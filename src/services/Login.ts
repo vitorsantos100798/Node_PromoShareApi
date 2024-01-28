@@ -11,13 +11,13 @@ export class LoginService {
     const user = await UserRepositories.findOneBy({ email });
 
     if (!user) {
-      return new Error("User or Password Invalid!");
+      return new Error("Usuário ou senha inválidos!");
     }
 
     const compare = await bcrypt.compare(password, user.password);
 
     if (!compare) {
-      return new Error("User or Password Invalid!");
+      return new Error("Usuário ou senha inválidos!");
     }
 
     const {
@@ -51,6 +51,11 @@ export class LoginService {
       expires_date: expires_in_refresh_token_date,
     });
     await RefleshTokenRepositories.save(create);
-    return { token, refleshToken };
+    return {
+      user: user.id,
+      city: user.city,
+      token,
+      refleshToken,
+    };
   }
 }

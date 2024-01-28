@@ -34,7 +34,7 @@ export class RefleshTokenService {
       id: String(userRefleshToken.id),
     });
 
-    const newToken = jwt.sign({ email }, secret_refresh_token, {
+    const token = jwt.sign({ email }, secret_refresh_token, {
       subject: sub,
       expiresIn: expires_in_refresh_token,
     });
@@ -49,10 +49,10 @@ export class RefleshTokenService {
       expires_date: expires_in_refresh_token_date,
     });
     await RefleshTokenRepositories.save(create);
-
+    const { refresh_token } = create;
     return {
-      newToken,
-      create,
+      token,
+      refresh_token,
     };
   }
 }

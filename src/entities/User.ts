@@ -9,8 +9,8 @@ import { RefleshToken } from "./RefleshToken";
 
 @Entity()
 export class User {
-  @PrimaryGeneratedColumn()
-  id: number;
+  @PrimaryGeneratedColumn("uuid")
+  id: string;
 
   @Column()
   email: string;
@@ -20,6 +20,9 @@ export class User {
 
   @Column()
   city: string;
+
+  @Column({ nullable: true })
+  profileImage: string;
 
   @OneToMany(() => RefleshToken, (type) => type.user)
   token_user?: RefleshToken[];
