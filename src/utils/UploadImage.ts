@@ -8,7 +8,6 @@ export class UploadImageS3 {
       secretAccessKey: bucketConfig.Aws_Secret_Key,
       region: bucketConfig.Aws_Bucket_Region,
     });
-    console.log(filename);
 
     const params = {
       Bucket: bucketConfig.Aws_Bucket_Name,
