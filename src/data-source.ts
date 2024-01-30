@@ -5,14 +5,14 @@ require("dotenv").config();
 
 export const AppDataSource = new DataSource({
   type: "postgres",
-  host: "promoday.crdp02eqbjwi.us-east-1.rds.amazonaws.com",
+  host: "localhost",
   port: 5432,
   username: cfg.username,
   password: cfg.password,
   database: cfg.database,
   entities: [`${__dirname}/**/entities/*.{ts,js}`],
   migrations: [`${__dirname}/**/migrations/*.{ts,js}`],
-  ssl: {
-    rejectUnauthorized: false,
-  },
+  //ssl: {
+  //rejectUnauthorized: false,
+  //},
 });
