@@ -12,7 +12,7 @@ export const AppDataSource = new DataSource({
   database: cfg.database,
   entities: [`${__dirname}/**/entities/*.{ts,js}`],
   migrations: [`${__dirname}/**/migrations/*.{ts,js}`],
-  //ssl: {
-  //rejectUnauthorized: false,
-  //},
+  ssl: {
+    rejectUnauthorized: false,
+  },
 });
