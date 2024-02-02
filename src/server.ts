@@ -12,7 +12,7 @@ AppDataSource.initialize()
 
     app.use(router);
 
-    app.listen(8080, () => console.log("Server is Running...🗳️🔥"));
+    app.listen(8080, "0.0.0.0", () => console.log("Server is Running...🗳️🔥"));
   })
   .catch((err) => {
     return console.error(`${err.message} 🥺`);
