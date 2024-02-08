@@ -17,11 +17,11 @@ router.post("/refleshtoken", new RefleshTokenController().refleshToken);
 router.post("/newpromotion", new NewPromotionController().handler);
 router.get("/getpromotion", new GetPromotionController().execute);
 router.post("/profileImage", new ProfileImageController().handler);
+router.get("/getcities", new GetCitiesController().execute);
+router.get("/getcupons", new GetCuponsController().execute);
+router.get("/getinfouser", new GetInfoUserController().execute);
 router.get("/", (req, res) => {
   return res
     .status(200)
     .json({ success: true, message: "Request successful." });
 });
-router.get("/getcities", new GetCitiesController().execute);
-router.get("/getcupons", new GetCuponsController().execute);
-router.get("/getinfouser", new GetInfoUserController().execute);
